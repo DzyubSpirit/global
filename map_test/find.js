@@ -8,7 +8,7 @@ const searchObject = {
   isEvenNumber: true
 };
 
-const findObjectByIndex = () => {
+const findObjectByIndex = (searchObject) => {
   let resultBuffer;
   const index = createIndex(searchObject);
   mainMap.forEach((obj, key) => {
@@ -17,7 +17,7 @@ const findObjectByIndex = () => {
   return resultBuffer;
 };
 
-const findObjectByObjectFields = () => {
+const findObjectByObjectFields = (searchObject) => {
   let resultBuffer;
   let foundAll = true;
 
